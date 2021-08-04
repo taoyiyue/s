@@ -8,31 +8,33 @@ const Home = () => import('../views/home')
 const Category = () => import('../views/category/index.vue')
 const Cart = () => import('../views/cart')
 const Profile = () => import('../views/profile/index.vue')
+const Detail =() => import('../views/detail/Detail.vue')
 
 const routes = [{
-  path: '',
-  redirect: './home'
-},
-{
-  path: '/home',
-  component: Home
-},
-{
-  path: '/category',
-  component: Category,
-},
-{
-  path: '/news',
-  component: news
-},
-{
-  path: '/cart',
-  component: Cart
-},
-{
-  path: '/profile',
-  component: Profile
-},
+    path: '',
+    redirect: './home'
+  },
+  {
+    path: '/home',
+    component: Home
+  },
+  {
+    path: '/category',
+    component: Category,
+  },
+
+  {
+    path: '/cart',
+    component: Cart
+  },
+  {
+    path: '/profile', 
+    component: Profile
+  },
+  {
+    path: '/detail/:iid', 
+    component: Detail
+  },
 
 ]
 
